@@ -4,8 +4,6 @@ plugins {
     `maven-publish`
 }
 
-group = "ru.landgrafhomyak.utility"
-version = "1.0"
 
 repositories {
     mavenCentral()
@@ -13,7 +11,7 @@ repositories {
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_1
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 tasks.withType<JavaCompile> {
@@ -32,6 +30,17 @@ kotlin {
             dependencies {
                 compileOnly(kotlin("stdlib"))
             }
+        }
+    }
+}
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "ru.landgrafhomyak.utility"
+            artifactId = "java-resource-loader"
+            version = "1.0"
+
+            from(components["java"])
         }
     }
 }
