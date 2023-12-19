@@ -1,0 +1,84 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.landgrafhomyak.utility",
+    "module": "java-resource-loader",
+    "version": "2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "java-resource-loader-2.0.jar",
+          "url": "java-resource-loader-2.0.jar",
+          "size": 6239,
+          "sha512": "34c4540a975b3258425135392568239497626cd288b2ccd00f047586eecfa09617342e3b1a4f2a6e2d354d1c034a0a834c8be77905a83cadf0b20d01cc487c0a",
+          "sha256": "9bba825537efc85e813829a46d9eb759ed22a8b333c2ab848aef0ba948a3bd58",
+          "sha1": "57d94ef6ef2dfd6f2bf46684b96c2b35467f6b6e",
+          "md5": "3ba79a1aeb5a574e74b353e5d1941d53"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "java-resource-loader-2.0.jar",
+          "url": "java-resource-loader-2.0.jar",
+          "size": 6239,
+          "sha512": "34c4540a975b3258425135392568239497626cd288b2ccd00f047586eecfa09617342e3b1a4f2a6e2d354d1c034a0a834c8be77905a83cadf0b20d01cc487c0a",
+          "sha256": "9bba825537efc85e813829a46d9eb759ed22a8b333c2ab848aef0ba948a3bd58",
+          "sha1": "57d94ef6ef2dfd6f2bf46684b96c2b35467f6b6e",
+          "md5": "3ba79a1aeb5a574e74b353e5d1941d53"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "java-resource-loader-2.0-sources.jar",
+          "url": "java-resource-loader-2.0-sources.jar",
+          "size": 2831,
+          "sha512": "2c7bbf0500355d2c6c4d6de74efde01cd7f9f5e66fcdcabf97335f5ef5cf741a08cd5353d996ba97ea3447dca68a5279336cfe39527f1f522e3e235e4e9d23b4",
+          "sha256": "59d36f9068c05181f49c126481b3d5b0a91d9b118b1689e24281d76d43d759a4",
+          "sha1": "4f999c5304b82144e8a886534aab4c08a835da81",
+          "md5": "b28121cb3d3aef3297ae3720d35526d2"
+        }
+      ]
+    }
+  ]
+}
