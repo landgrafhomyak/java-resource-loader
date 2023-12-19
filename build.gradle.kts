@@ -12,6 +12,9 @@ repositories {
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+
+    // withJavadocJar()
+    withSourcesJar()
 }
 
 tasks.withType<JavaCompile> {
@@ -38,9 +41,15 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "ru.landgrafhomyak.utility"
             artifactId = "java-resource-loader"
-            version = "1.0"
+            version = "2.0"
 
             from(components["java"])
+
+            pom {
+                packaging = "jar"
+                name.set("Utility functions for Java resource loading")
+                // url.set("https://maven.landgrafhomyak.ru/ru/landgrafhomyak/utility/java-resource-loader/")
+            }
         }
     }
 }
